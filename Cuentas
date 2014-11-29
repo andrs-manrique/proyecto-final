@@ -6,3 +6,24 @@ medina0816
 Link de Git HUb Tutorial:
 
 https://lineaporlinea.wordpress.com/2014/01/19/integrar-netbeans-con-github/
+
+
+//Crear esta tabla con datos en SQL para hacer Pruebas:
+DROP TABLE IF EXISTS `usuarios`;
+CREATE TABLE IF NOT EXISTS `usuarios` (
+  `usuario_identificador` int(11) NOT NULL,
+  `usuario_nombre` varchar(40) NOT NULL,
+  `usuario_apellido` varchar(40) NOT NULL,
+  `usuario_correo` varchar(60) NOT NULL,
+  `usuario_contrasena` varchar(50) NOT NULL,
+  `usuario_permisos` varchar(30) NOT NULL,
+  PRIMARY KEY (`usuario_identificador`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `usuarios`
+--
+
+INSERT INTO `usuarios` (`usuario_identificador`, `usuario_nombre`, `usuario_apellido`, `usuario_correo`, `usuario_contrasena`, `usuario_permisos`) VALUES
+(1020, 'juan', 'manrtinez', 'correo@mailto.es', '81dc9bdb52d04dc20036dbd8313ed055', 'administrador'),
+(123456, 'camilo', 'jose', 'mailto@es.com', '81dc9bdb52d04dc20036dbd8313ed055', 'colaborador');
